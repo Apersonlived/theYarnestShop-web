@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.head {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.info-box h3 {
+    color: #928A84;
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.info-box p {
+    color: #5E4A4A;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 50px;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #5E4A4A;
+    margin-top: 0;
+    border-bottom: 2px solid #928A84;
+    padding-bottom: 0.5rem;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+th {
+    background-color: #F5E9D9;
+    color: #5E4A4A;
+}
+
+.stock-value {
+    color: #B24169;
+    font-weight: bold;
+}
+
+/* Bestsellers List */
+.bestsellers-list {
+    list-style: none;
+    padding: 0;
+}
+
+.bestsellers-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.product-name {
+    color: #5E4A4A;
+}
+
+.sold-count {
+    background-color: #928A84;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Chart Container */
+.chart-container {
+    position: relative;
+    height: 250px;
+    margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .head {
+        flex-direction: column;
+    }
+    
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+}

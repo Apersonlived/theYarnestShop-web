@@ -1,0 +1,100 @@
+.product-page {
+	max-width: 1400px;
+	margin: 2rem auto;
+	padding: 0 2rem;
+}
+
+.product-page .product-form-header {
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.product-page .product-form-header h2 {
+	font-family: 'Inknut Antiqua', serif;
+	font-size: 2rem;
+	color: #5E4A4A;
+	position: relative;
+	display: inline-block;
+}
+
+.product-page .product-form-header h2::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: #928A84;
+	bottom: -10px;
+	left: 25%;
+}
+
+.product-page .product-form-container {
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	margin: 2rem 0;
+}
+
+.product-page .product-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.product-page .form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.product-page .form-group label {
+	font-weight: 600;
+	color: #5E4A4A;
+}
+
+.product-page .form-group input, .product-page .form-group textarea {
+	padding: 0.5rem;
+	border: 1px solid #EBEBEB;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.product-page .form-group textarea {
+	resize: vertical;
+}
+
+.product-page .form-actions {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+.product-page .btn {
+	padding: 8px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #4A4A4A;
+	text-align: center;
+}
+
+.product-page .btn:hover {
+	opacity: 0.8;
+}
+
+.product-page .btn-cancel {
+	background-color: #928A84;
+}
+
+.product-page .product-image-preview {
+	max-width: 100px;
+	max-height: 100px;
+	margin-top: 0.5rem;
+}
+
+.error-message{
+	color: red;
+}

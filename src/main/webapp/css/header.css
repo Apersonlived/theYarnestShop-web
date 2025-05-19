@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EBEBEB;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+	z-index: 999;
+    position: relative;
+    background-color: #EBEBEB;
+}
+
+header h1{
+	font-family: Inknut Antiqua;
+	font-size: 54px;
+	align-items: center;
+	text-align: center;
+	color: #5E4A4A;
+	margin-top: -2px;
+}
+
+header h6{
+	font-family: Inknut Antiqua;
+	font-size: 24px;
+	align-items: center;
+	text-align: center;
+	color: #5E4A4A;
+	margin-top: -40px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+    width: 100%;
+}
+
+.auth-button {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.auth-button input[type="submit"] {
+    background-color: #5E4A4A;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.auth-button input[type="submit"]:hover {
+    background-color: #928A84;
+}
+
+.sticky-header {
+    position: sticky;
+    margin-top: -50px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #928A84;
+    transform: translateY(-2px);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-profile-container {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.5rem;
+    gap: 1rem;
+    width: 100%;
+    }
+
+.search-bar {
+    display: flex;
+    align-items: right;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    height: 30px;
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0 20px 20px 0;
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #4A4A4A;
+    color: #EBEBEB;
+}
+
+.profile{
+	width: 50px;
+    height: 50px;
+    align-items:right;
+    border: none;
+}
+
+.profile-icon{
+	color: #4A4A4A;
+}
+
+@media ( min-width : 769px) {
+	.header, .main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.header {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media ( min-width : 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

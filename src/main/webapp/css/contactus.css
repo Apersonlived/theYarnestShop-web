@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+h3 {
+	font-family: Leckerli One;
+	font-size: 48px;
+	color: #B24169;
+}
+
+h5 {
+	font-family: Joan;
+	font-size: 20px;
+	color: black;
+}
+
+.contact {
+	max-width: 1200px;
+	height: 600px;
+	margin: 40px auto;
+	align-items: center;
+	background: #FFFFFF;
+	display: flex;
+}
+
+.info {
+	width: 50%;
+	height:100%;
+	flex:right;
+	text-align:right;
+	background: #FFFFFF;
+}
+
+label {
+	display: block;
+	font-size: 19px;
+	margin-top: 50px;
+	margin-bottom: 5px;
+	padding-left: 60px;
+	font-weight: 600;
+}
+
+input {
+	width: 75%;
+	height: 35px;
+	padding: 10px;
+	margin-left: 60px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: content-box;
+	align-items: center;
+}
+
+.message{
+	height: 90px;
+}
+
+.message-submit {
+	background-color: #3B1E0E;
+	color: white;
+	font-family: Leckerli One;
+	font-size: 24px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 40px;
+	width: 30%;
+	position: relative;
+	left: 48%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.message-submit:hover {
+	background-color: #4A4A4A;
+}
+
+.contact-header{
+	text-align: center;
+}
+
+.contact-info{
+	text-align: right;
+	margin-top: 130px;
+	margin-right: 100px;
+}
+
+.media{
+	display: flex;
+	justify-content: right;
+	gap: 30px;
+	margin-top: 80px;
+	margin-right: 100px;
+}
+
+.media-img{
+	width: 30px;
+	height: 30px;
+}

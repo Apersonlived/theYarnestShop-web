@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #EBEBEB;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-family: Joan;
+	font-size: 30px;
+	align-items: center;
+	text-align: center;
+	color: #EFEBE8;
+}
+
+h5 {
+	font-family: Joan;
+	font-size: 20px;
+	align-items: center;
+	text-align: center;
+	color: #EFEBE8;
+}
+
+.profile-form {
+	max-width: 900px;
+	margin: 40px auto;
+	padding: 20px;
+	align-items: center;
+	background: #4A4A4A;
+	border-radius: 10px;
+	display: flex;
+	gap: 30px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.photo-side {
+	width: 50%;
+	flex: left;
+}
+
+.form-side {
+	width: 50%;
+	flex: right;
+}
+
+.user-img {
+	border-radius: 50%;
+	display: block; margin-left : auto; margin-right : auto;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-group label {
+	display: block;
+	color: #EFEBE8;
+	margin-bottom: 5px;
+	font-weight: 600px;
+}
+
+.form-group input {
+	width: 90%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.form-button {
+	width: 100%;
+	flex: right;
+	gap: 40px;
+}
+
+.submit-btn {
+	width: 40%;
+	height: 50px;
+	padding: 1rem;
+	align-items: center;
+	text-align: center;
+	background-color: #EFEBE8;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s;
+	flex: 1;
+}
+
+.submit-btn:hover {
+	background: #928A84;
+	transform: translateY(-2px);
+}

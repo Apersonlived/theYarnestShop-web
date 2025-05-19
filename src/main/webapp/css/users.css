@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.user-list-container {
+	max-width: 1400px;
+	margin: 2rem auto;
+	padding: 0 2rem;
+}
+
+.user-list-header {
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.user-list-header h2 {
+	font-family: 'Inknut Antiqua', serif;
+	font-size: 2rem;
+	color: #5E4A4A;
+	position: relative;
+	display: inline-block;
+}
+
+.user-list-header h2::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: #928A84;
+	bottom: -10px;
+	left: 25%;
+}
+
+.user-table-container {
+	overflow-y: scroll;
+	margin: 2rem 0;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+}
+
+.user-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+	padding: 1rem;
+	text-align: left;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.user-table th {
+	background-color: #4A4A4A;
+	color: #EFEBE8;
+	font-weight: 600;
+}
+
+.user-table tr:hover {
+	background-color: #FCF9F9;
+}
+
+@media ( max-width : 768px) {
+	.user-table {
+		display: block;
+	}
+	.user-table thead, .user-table tbody, .user-table th, .user-table td,
+		.user-table tr {
+		display: block;
+	}
+	.user-table thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	.user-table tr {
+		border: 1px solid #EBEBEB;
+		margin-bottom: 1rem;
+	}
+	.user-table td {
+		border: none;
+		position: relative;
+		padding-left: 50%;
+	}
+	.user-table td:before {
+		position: absolute;
+		left: 1rem;
+		width: 45%;
+		padding-right: 1rem;
+		white-space: nowrap;
+		font-weight: 600;
+		color: #5E4A4A;
+	}
+	.user-table td:nth-of-type(1):before {
+		content: "ID:";
+	}
+	.user-table td:nth-of-type(2):before {
+		content: "Full Name:";
+	}
+	.user-table td:nth-of-type(3):before {
+		content: "Username:";
+	}
+	.user-table td:nth-of-type(4):before {
+		content: "Email:";
+	}
+	.user-table td:nth-of-type(5):before {
+		content: "Role:";
+	}
+}
+
+.action-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.action-buttons {
+	display: flex;
+	gap: 5px;
+}
+
+.btn {
+	padding: 8px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #4A4A4A;
+	text-align: center;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.product-image {
+	max-width: 50px;
+	max-height: 50px;
+}

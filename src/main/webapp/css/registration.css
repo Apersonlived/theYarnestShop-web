@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@charset "ISO-8859-1";
+
+body {
+	font-family: sans-serif;
+	background-color:rgba(195, 194, 192, 1);
+	background-repeat: no-repeat;
+	height: 1414px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.registration-box {
+	width: 692px;
+	height: 1252px;
+	background: rgba(217, 217, 217, 0.5);
+	margin: 30px auto;
+	padding: 20px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: Lavishly Yours;
+	font-size: 30px;
+	margin-top: 30px;
+}
+h5{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-size: 11px;
+	text-decoration: underline;
+	color: black;
+}
+
+
+label {
+	display: block;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 3px;
+	padding-left: 60px;
+}
+
+input {
+	width: 80%;
+	height: 35px;
+	padding: 10px;
+	margin-left: 60px;
+	background-color: rgba(242, 239, 239, 1);
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: content-box;
+	align-items: center;
+}
+
+.registration-button {
+	background-color: #86867A;
+	color: white;
+	font-family: Lateef;
+	font-size: 24px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 30px auto;
+	margin-top: 10px;
+	width: 30%;
+	position: relative;
+	left: 48%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+button:hover {
+	background-color: #4A4A4A;
+}
